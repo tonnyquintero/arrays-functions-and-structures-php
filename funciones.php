@@ -1,7 +1,7 @@
 <?php
 
 function get_pokemon() {
-    $numero_aleatorio = rand(1,5);
+    $numero_aleatorio = rand(1,7);
 
     switch ($numero_aleatorio) {
         case 1 :
@@ -21,12 +21,12 @@ function get_pokemon() {
             break;
         
         default:
-            echo "no se encontraron pokemones";
+            echo "no se encontraron pokemones \n";
             break;
     }
 }
 
-for ($i=0; $i < 10; $i++) { 
+for ($i=0; $i < 6; $i++) { 
     get_pokemon();
 }
 
